@@ -1,16 +1,19 @@
 import React, {Component} from "react";
 
-export default class Main extends Component {
+import {combine, Container, ContainerRow} from "../hoc/container-helper/container";
+
+class Main extends Component {
 
     render() {
         return (
-            <div class="row">
+            <React.Fragment>
                 <div class="col s3">
                 </div>
                 <div class="col s9">
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
-
 }
+
+export default combine(Container, ContainerRow)(Main);

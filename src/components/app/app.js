@@ -2,15 +2,14 @@ import React from 'react';
 
 import Header from "../header";
 import Main from "../main";
-import ContainerHelper from "../hoc/container-helper";
 
 function App() {
     return (
-        <React.Fragment>
+        <div>
             <Header/>
             <Main/>
-        </React.Fragment>
+        </div>
     );
 }
 
-export default ContainerHelper(App);
+export default App;
