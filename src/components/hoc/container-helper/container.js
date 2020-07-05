@@ -27,7 +27,8 @@ const ContainerRow = (Wrapped) => {
 }
 
 /**
- * Combine containers with a provided component
+ * Combine containers with a provided component.
+ * It func use right reducer.
  */
 const combine = (...containers) => (Component) =>
     containers.reduceRight((prev, curr) => {
