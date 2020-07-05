@@ -1,17 +1,19 @@
 import React, {Component} from "react";
 
+import Sidebar from "../sidebar";
+import About from "../../pages/about";
 import {combine, Container, ContainerRow} from "../hoc/container-helper/container";
+
+import './index.css'
 
 class Main extends Component {
 
     render() {
         return (
-            <React.Fragment>
-                <div class="col s3">
-                </div>
-                <div class="col s9">
-                </div>
-            </React.Fragment>
+            <div className="main">
+                <Sidebar/>
+                <About/>
+            </div>
         );
     }
 }
