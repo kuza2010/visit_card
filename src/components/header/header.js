@@ -3,6 +3,7 @@ import React from "react";
 import globalConstant from "../../utils/constant";
 
 import './style.css'
+import {Link} from "react-router-dom";
 
 const Header = () => {
 
@@ -19,13 +20,19 @@ const Header = () => {
                             </a>
                             <ul className="right hide-on-med-and-down ">
                                 <li>
-                                    <a href="#">About me</a>
+                                    <Link to={'/'}>
+                                        About me
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">Career</a>
+                                    <Link to={'/career'}>
+                                        Career
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">Project</a>
+                                    <Link to={'/project'}>
+                                        Project
+                                    </Link>
                                 </li>
                             </ul>
                         </div>

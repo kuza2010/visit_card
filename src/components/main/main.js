@@ -5,15 +5,21 @@ import About from "../../pages/about";
 import {combine, Container, ContainerRow} from "../hoc/container-helper/container";
 
 import './index.css'
+import {Route, Switch} from "react-router-dom";
 
 class Main extends Component {
 
     render() {
         return (
-            <div className="main">
+            <main>
                 <Sidebar/>
-                <About/>
-            </div>
+                <Switch>
+                    <Route exact
+                           path={'/'}
+                           component={About}/>
+                    <Route path={'*'} render={() => <div>404 Not Found</div>}/>
+                </Switch>
+            </main>
         );
     }
 }
