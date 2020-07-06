@@ -1,7 +1,9 @@
 /* color #e1bee7 - purple lighten-4 */
 :root {
     --mainColor: #e1bee7;
-    --fontColor: #494e52
+    --fontColor: #494e52;
+    --footerBackground: #f2f3f3;
+    --footerBorderColor: #bdc1c4;
 }
 
 body {
@@ -11,4 +13,13 @@ body {
 
 a {
     color: var(--fontColor) !important;
+}
+
+.animate_link:hover {
+    background: linear-gradient(
+            to right,
+            var(--mainColor) 0%,
+            var(--mainColor) 5px,
+            transparent
+    );
 }

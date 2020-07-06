@@ -11,12 +11,3 @@
     margin: 10px 0 !important;
 }
 
-.animate_link:hover {
-    background: linear-gradient(
-            to right,
-            var(--mainColor) 0%,
-            var(--mainColor) 5px,
-            transparent
-    );
-}
-

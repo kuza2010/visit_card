@@ -1,13 +1,14 @@
 import React, {Component} from "react";
 
+import {Route, Switch} from "react-router-dom";
 import Sidebar from "../sidebar";
 import About from "../../pages/about";
+import Career from "../../pages/career";
+import Projects from "../../pages/projects";
+
 import {combine, Container, ContainerRow} from "../hoc/container-helper/container";
 
 import './index.css'
-import {Route, Switch} from "react-router-dom";
-import Career from "../../pages/career";
-import Projects from "../../pages/projects";
 
 class Main extends Component {
 

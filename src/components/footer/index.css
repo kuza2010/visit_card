@@ -1,0 +1,17 @@
+footer {
+    background-color: var(--footerBackground) !important;
+    border-top: 1px solid var(--footerBorderColor);
+    color: var(--fontColor) !important;
+}
+
+.without-bottom-margin {
+    margin-bottom: 0 !important;
+}
+
+.bottom-margin {
+    margin-bottom: 20px !important;
+}
+
+.love {
+    color: red;
+}
