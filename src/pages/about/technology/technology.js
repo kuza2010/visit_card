@@ -1,6 +1,22 @@
 import React from "react";
 
+import imageForCodeSection from "../images/techology/code";
+import imageForToolSection from "../images/techology/tool";
+
 import './index.css'
+
+const TechnologyList = () => {
+    return (
+        <div className="col s12">
+            <Technology title="Code"
+                        content="I am a multi-faceted person. I like backend and frontend development. I have had experience in mobile app development."
+                        images={imageForCodeSection}/>
+            <Technology title="Tool"
+                        content="Git is my daily friend. I have experience with Docker as well as the Atlassian software development tools."
+                        images={imageForToolSection}/>
+        </div>
+    );
+}
 
 
 const getImages = (images) => {
@@ -31,4 +47,4 @@ const Technology = ({content, title, images}) => {
     );
 }
 
-export default Technology;
+export default TechnologyList;

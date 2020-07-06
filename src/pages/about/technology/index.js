@@ -1,3 +1,3 @@
-import Technology from "./technology";
+import TechnologyList from "./technology";
 
-export default Technology;
+export default TechnologyList;
