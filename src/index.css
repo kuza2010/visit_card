@@ -1,0 +1,13 @@
+/* color #e1bee7 - purple lighten-4 */
+:root {
+    --mainColor: #e1bee7;
+    --fontColor: #494e52
+}
+
+body {
+    color: var(--fontColor) !important;
+}
+
+a {
+    color: var(--fontColor) !important;
+}

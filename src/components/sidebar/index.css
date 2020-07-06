@@ -1,3 +1,12 @@
-img {
+.max-width_200 {
     max-width: 200px;
+}
+
+h6 {
+    font-weight: bold !important;
+}
+
+blockquote {
+    margin: 10px 0 !important;
+    border-left: 5px solid var(--mainColor) !important;
 }

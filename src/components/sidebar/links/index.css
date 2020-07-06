@@ -1,0 +1,22 @@
+.icon {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.icon_margin {
+    margin-right: 10px;
+}
+
+.collection-item {
+    margin: 10px 0 !important;
+}
+
+.animate_link:hover {
+    background: linear-gradient(
+            to right,
+            var(--mainColor) 0%,
+            var(--mainColor) 5px,
+            transparent
+    );
+}
+

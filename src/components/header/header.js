@@ -15,9 +15,10 @@ const Header = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col s8 push-s2">
-                            <a href="#" className="brand-logo">
+                            <Link className="brand-logo"
+                                to={'/'}>
                                 {author}
-                            </a>
+                            </Link>
                             <ul className="right hide-on-med-and-down ">
                                 <li>
                                     <Link to={'/'}>
