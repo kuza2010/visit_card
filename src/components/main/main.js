@@ -6,6 +6,8 @@ import {combine, Container, ContainerRow} from "../hoc/container-helper/containe
 
 import './index.css'
 import {Route, Switch} from "react-router-dom";
+import Career from "../../pages/career";
+import Projects from "../../pages/projects";
 
 class Main extends Component {
 
@@ -17,7 +19,14 @@ class Main extends Component {
                     <Route exact
                            path={'/'}
                            component={About}/>
-                    <Route path={'*'} render={() => <div>404 Not Found</div>}/>
+                    <Route exact
+                           path={'/career'}
+                           component={Career}/>
+                    <Route exact
+                           path={'/projects'}
+                           component={Projects}/>
+                    <Route path={'*'}
+                           render={() => <div>404 Not Found</div>}/>
                 </Switch>
             </main>
         );
