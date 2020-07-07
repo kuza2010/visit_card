@@ -6,7 +6,23 @@
     --footerBorderColor: #bdc1c4;
 }
 
+html {
+    height: 100% !important;
+    box-sizing: border-box !important;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit !important;
+}
+
 body {
+    position: relative !important;
+    margin: 0 !important;
+    padding-bottom: 12rem !important;
+    min-height: 100% !important;
+
     color: var(--fontColor) !important;
     line-height: 1.5 !important;
 }
